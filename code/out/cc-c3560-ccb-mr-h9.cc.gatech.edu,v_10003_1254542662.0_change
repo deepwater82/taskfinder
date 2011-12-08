@@ -1,0 +1,20 @@
+add !VLAN: 21   GT-CC-acad-hpc                   active    Gi0/19, Gi0/25, Gi0/27, Gi0/29, Gi0/30, Gi0/31, Gi0/32, Gi0/33, Gi0/34, Gi0/35, Gi0/36
+add !VLAN:                                                 Gi0/37, Gi0/38
+del !VLAN: 21   GT-CC-acad-hpc                   active    Gi0/19, Gi0/25, Gi0/27, Gi0/29
+del !VLAN:                                                 Gi0/30, Gi0/31, Gi0/32, Gi0/33
+del !VLAN:                                                 Gi0/34, Gi0/35, Gi0/36, Gi0/37
+del !VLAN:                                                 Gi0/38
+add !VLAN: 30   GT-CC-supv2                      active    Gi0/1, Gi0/2, Gi0/3, Gi0/4, Gi0/5, Gi0/6, Gi0/7, Gi0/8, Gi0/9, Gi0/10, Gi0/11, Gi0/12
+add !VLAN:                                                 Gi0/13, Gi0/14, Gi0/15, Gi0/16, Gi0/17, Gi0/18, Gi0/20, Gi0/22, Gi0/26, Gi0/28
+del !VLAN: 30   GT-CC-supv2                      active    Gi0/1, Gi0/2, Gi0/3, Gi0/4
+del !VLAN:                                                 Gi0/5, Gi0/6, Gi0/7, Gi0/8
+del !VLAN:                                                 Gi0/9, Gi0/10, Gi0/11, Gi0/12
+del !VLAN:                                                 Gi0/13, Gi0/14, Gi0/15, Gi0/16
+del !VLAN:                                                 Gi0/17, Gi0/18, Gi0/20, Gi0/22
+del !VLAN:                                                 Gi0/26, Gi0/28
+add !VLAN: 114  GT-CC-sweat                      active    Gi0/21, Gi0/23, Gi0/24, Gi0/39, Gi0/40, Gi0/41, Gi0/42, Gi0/43, Gi0/44, Gi0/45, Gi0/46
+add !VLAN:                                                 Gi0/47, Gi0/48
+del !VLAN: 114  GT-CC-sweat                      active    Gi0/21, Gi0/23, Gi0/24, Gi0/39
+del !VLAN:                                                 Gi0/40, Gi0/41, Gi0/42, Gi0/43
+del !VLAN:                                                 Gi0/44, Gi0/45, Gi0/46, Gi0/47
+del !VLAN:                                                 Gi0/48

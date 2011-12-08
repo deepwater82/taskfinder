@@ -1,0 +1,512 @@
+add !RANCID-CONTENT-TYPE: cisco
+add !
+add !Chassis type: WS-C3560E-48TD - a 3500XL switch
+add !CPU: PowerPC405
+add !
+add !Memory: main 122880K/8184K
+add !Model revision number           : B0
+add !Model number                    : WS-C3560E-48TD-S
+add !Motherboard assembly number     : 73-10319-12
+add !Motherboard serial number       : FDO11480BS6
+add !Motherboard revision number     : A0
+add !
+add !Processor ID: FDO1148V0SY
+add !
+add !
+add !Image: Software: C3560E-UNIVERSAL-M, 12.2(35)SE5, RELEASE SOFTWARE (fc1)
+add !Image: Compiled: Thu 19-Jul-07 17:18 by nachen
+add !Image: flash:c3560e-universal-mz.122-35.SE5/c3560e-universal-mz.122-35.SE5.bin
+add !
+add !BOOTLDR: Version 12.2(35r)SE1, RELEASE SOFTWARE (fc2)
+add !
+add !
+add !
+add !Variable: BOOT path-list      : flash:c3560e-universalk9-mz.122-46.SE.bin
+add !Variable: Config file         : flash:/config.text
+add !Variable: Private Config file : flash:/private-config.text
+add !Variable: Enable Break        : no
+add !Variable: Manual Boot         : no
+add !Variable: HELPER path-list    : 
+add !Variable: Auto upgrade        : yes
+add !Variable: Auto upgrade path   : 
+add !
+add !Flash: Directory of flash:/
+add !Flash:     2  -rwx        9259  Aug 25 1994 06:44:34 +00:00  config.text
+add !Flash:     4  -rwx    12120623  Jan 27 1994 02:20:51 +00:00  c3560e-universalk9-mz.122-46.SE.bin
+add !Flash:     5  drwx         512   Mar 1 1993 00:05:42 +00:00  c3560e-universal-mz.122-35.SE5
+add !Flash:   464  -rwx           5  Aug 25 1994 06:44:34 +00:00  private-config.text
+add !Flash: 57409536 bytes total (33836544 bytes free)
+add !
+add !Flash: nvram: Directory of nvram:/
+add !Flash: nvram:   504  -rw-        9259                    <no date>  startup-config
+add !Flash: nvram:   505  ----           5                    <no date>  private-config
+add !Flash: nvram: 524288 bytes total (514972 bytes free)
+add !
+add !
+add !VTP: VTP Version                     : 2
+add !VTP: Configuration Revision          : 18
+add !VTP: Maximum VLANs supported locally : 1005
+add !VTP: Number of existing VLANs        : 17
+add !VTP: VTP Operating Mode              : Server
+add !VTP: VTP Domain Name                 : 
+add !VTP: VTP Pruning Mode                : Disabled
+add !VTP: VTP V2 Mode                     : Disabled
+add !VTP: VTP Traps Generation            : Disabled
+add !VTP: MD5 digest                      : 0xF7 0x0C 0xC1 0x26 0x63 0x52 0xD5 0x63 
+add !VTP: Local updater ID is 130.207.29.76 on interface Vl29 (lowest numbered VLAN interface found)
+add !
+add !VLAN: VLAN Name                             Status    Ports
+add !VLAN: ---- -------------------------------- --------- -------------------------------
+add !VLAN: 1    default                          active    Te0/2
+add !VLAN: 2    GT-CC-ccadmin                    active    Gi0/3, Gi0/4, Gi0/6, Gi0/7
+add !VLAN:                                                 Gi0/16
+add !VLAN: 6    GT-CC-os                         active    Gi0/8, Gi0/10, Gi0/14
+add !VLAN: 7    GT-CC-cc                         active    Gi0/1, Gi0/13, Gi0/15, Gi0/17
+add !VLAN:                                                 Gi0/19, Gi0/20, Gi0/21, Gi0/22
+add !VLAN:                                                 Gi0/23, Gi0/25, Gi0/26, Gi0/27
+add !VLAN:                                                 Gi0/28, Gi0/29, Gi0/33, Gi0/35
+add !VLAN:                                                 Gi0/42, Gi0/48
+add !VLAN: 17   GT-CC-core                       active    Gi0/2, Gi0/5, Gi0/18, Gi0/32
+add !VLAN:                                                 Gi0/34, Gi0/37, Gi0/38, Gi0/39
+add !VLAN:                                                 Gi0/40, Gi0/41, Gi0/43, Gi0/44
+add !VLAN:                                                 Gi0/45, Gi0/46, Gi0/47
+add !VLAN: 29   GT-CC-supv                       active    Gi0/9
+add !VLAN: 30   VLAN0030                         active    Gi0/11, Gi0/12
+add !VLAN: 107  VLAN0107                         active    Gi0/24
+add !VLAN: 112  GT-CC-testsubnet                 active    Gi0/36
+add !VLAN: 114  GT-CC-sweat                      active    Gi0/30
+add !VLAN: 275  GT-CC-camera-pvt                 active    
+add !VLAN: 691  Klaus-network-equipment          active    
+add !VLAN: 999  door-controller                  active    Gi0/31
+add !VLAN: 1002 fddi-default                     act/unsup 
+add !VLAN: 1003 token-ring-default               act/unsup 
+add !VLAN: 1004 fddinet-default                  act/unsup 
+add !VLAN: 1005 trnet-default                    act/unsup 
+add !VLAN: VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+add !VLAN: ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+add !VLAN: 1    enet  100001     1500  -      -      -        -    -        0      0   
+add !VLAN: 2    enet  100002     1500  -      -      -        -    -        0      0   
+add !VLAN: 6    enet  100006     1500  -      -      -        -    -        0      0   
+add !VLAN: 7    enet  100007     1500  -      -      -        -    -        0      0   
+add !VLAN: 17   enet  100017     1500  -      -      -        -    -        0      0   
+add !VLAN: 29   enet  100029     1500  -      -      -        -    -        0      0   
+add !VLAN: 30   enet  100030     1500  -      -      -        -    -        0      0   
+add !VLAN: 107  enet  100107     1500  -      -      -        -    -        0      0   
+add !VLAN: 112  enet  100112     1500  -      -      -        -    -        0      0   
+add !VLAN: 114  enet  100114     1500  -      -      -        -    -        0      0   
+add !VLAN: 275  enet  100275     1500  -      -      -        -    -        0      0   
+add !VLAN: 691  enet  100691     1500  -      -      -        -    -        0      0   
+add !VLAN: 999  enet  100999     1500  -      -      -        -    -        0      0   
+add !VLAN: 1002 fddi  101002     1500  -      -      -        -    -        0      0   
+add !VLAN: 1003 tr    101003     1500  -      -      -        -    -        0      0   
+add !VLAN: 1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+add !VLAN: 1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+add !VLAN: Remote SPAN VLANs
+add !VLAN: ------------------------------------------------------------------------------
+add !VLAN: Primary Secondary Type              Ports
+add !VLAN: ------- --------- ----------------- ------------------------------------------
+add !
+add !
+add config-register 0xF
+add version 12.2
+add no service pad
+add service timestamps debug uptime
+add service timestamps log uptime
+add service password-encryption
+add !
+add hostname cc-c3560-kacb-2219-r6
+add !
+add enable secret [deleted]
+add enable password [deleted]
+add !
+add username [deleted]
+add username [deleted]
+add aaa new-model
+add aaa authentication login default group tacacs+ local
+add aaa authentication enable default group tacacs+ enable
+add aaa authorization exec default group tacacs+ local 
+add !
+add aaa session-id common
+add system mtu routing 1500
+add ip subnet-zero
+add ip domain-name cc.gatech.edu
+add ip name-server 130.207.17.21
+add ip name-server 130.207.17.22
+add !
+add no file verify auto
+add spanning-tree mode pvst
+add spanning-tree extend system-id
+add !
+add vlan internal allocation policy ascending
+add !
+add interface FastEthernet0
+add  no ip address
+add  shutdown
+add !
+add interface GigabitEthernet0/1
+add  description Legion old remove
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/2
+add  description Ackerman
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/3
+add  description Hoover
+add  switchport access vlan 2
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/4
+add  description Nixon
+add  switchport access vlan 2
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/5
+add  description Harrison
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/6
+add  description Carter
+add  switchport access vlan 2
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/7
+add  description Gford
+add  switchport access vlan 2
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/8
+add  description Neotrantor
+add  switchport access vlan 6
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/9
+add  description Neotrantor X-Serve
+add  switchport access vlan 29
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/10
+add  description Trantor
+add  switchport access vlan 6
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/11
+add  description Trantor A1000
+add  switchport access vlan 30
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/12
+add  description Trantor X-Serve
+add  switchport access vlan 30
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/13
+add  description locris
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/14
+add  description Haven
+add  switchport access vlan 6
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/15
+add  description Ix
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/16
+add  description Wilson
+add  switchport access vlan 2
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/17
+add  description Ace2
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/18
+add  description Nevah
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/19
+add  description Pleuma
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/20
+add  description Glenesk
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/21
+add  description Imperial
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/22
+add  description Granite
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/23
+add  description Glenlivet
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/24
+add  description blanche
+add  switchport access vlan 107
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/25
+add  description centauri
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/26
+add  description gemini
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/27
+add  description Flagstone
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/28
+add  description Jura
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/29
+add  description Rhampora
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/30
+add  description Lennon
+add  switchport access vlan 114
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/31
+add  description Continuum VM
+add  switchport access vlan 999
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/32
+add  description bazookoid
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/33
+add  description quagaar
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/34
+add  description binks
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/35
+add  description salinn
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/36
+add  description Hollister - EntertheMatrix
+add  switchport access vlan 112
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/37
+add  description starbug
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/38
+add  description ouroboros
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/39
+add  description Tape
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/40
+add  description legion
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/41
+add  description centauri-17
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/42
+add  description Esperanto
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/43
+add  description gemini
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/44
+add  description leviathan
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/45
+add  description wildfire
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/46
+add  description gelf
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/47
+add  description Scouter
+add  switchport access vlan 17
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/48
+add  description celeste
+add  switchport access vlan 7
+add  switchport mode access
+add  spanning-tree portfast
+add !
+add interface GigabitEthernet0/49
+add !
+add interface GigabitEthernet0/50
+add !
+add interface GigabitEthernet0/51
+add !
+add interface GigabitEthernet0/52
+add !
+add interface TenGigabitEthernet0/1
+add  description 6509 TE 8/2 
+add  switchport trunk encapsulation dot1q
+add  switchport trunk native vlan 29
+add  switchport trunk allowed vlan 2,6,7,17,29,30,107,112,114,275,691,999
+add  switchport mode trunk
+add !
+add interface TenGigabitEthernet0/2
+add !
+add interface Vlan1
+add  no ip address
+add  shutdown
+add !
+add interface Vlan29
+add  ip address 130.207.29.76 255.255.255.0
+add !
+add ip default-gateway 130.207.29.1
+add ip classless
+add ip http server
+add !
+add ip access-list extended access-vty-in
+add  permit tcp 130.207.252.0 0.0.0.255 any range 22 telnet log-input
+add  permit tcp 128.61.5.0 0.0.0.255 any range 22 telnet log-input
+add  permit tcp 128.61.252.0 0.0.0.255 any range 22 telnet log-input
+add  permit tcp 130.207.13.0 0.0.0.255 any range 22 telnet log-input
+add  permit tcp 130.207.29.0 0.0.0.255 any range 22 telnet log-input
+add  permit tcp host 130.207.161.14 any range 22 telnet log-input
+add  permit tcp host 130.207.166.15 any range 22 telnet log-input
+add  permit tcp host 130.207.166.16 any range 22 telnet log-input
+add  permit tcp host 130.207.6.13 any range 22 telnet log-input
+add  permit tcp host 130.207.127.6 any range 22 telnet log-input
+add  permit tcp host 130.207.127.7 any range 22 telnet log-input
+add  permit tcp 130.207.27.224 0.0.0.31 any range 22 telnet log-input
+add !
+add logging facility local3
+add logging 130.207.17.24
+add logging 130.207.17.25
+add access-list 5 permit 128.61.5.211
+add access-list 5 permit 128.61.252.110 0.0.0.1
+add access-list 5 permit 128.61.252.112
+add access-list 5 permit 130.207.6.13
+add access-list 5 permit 130.207.17.0 0.0.0.255
+add access-list 5 permit 130.207.29.0 0.0.0.255
+add access-list 5 permit 130.207.252.21
+add access-list 5 permit 130.207.252.224 0.0.0.15
+add access-list 5 deny   any
+add snmp-server community [deleted]
+add snmp-server enable traps license
+add tacacs-server host 130.207.252.41
+add tacacs-server host 130.207.252.42
+add tacacs-server directed-request
+add tacacs-server key [deleted]
+add radius-server source-ports 1645-1646
+add !
+add control-plane
+add !
+add banner motd ^C
+add 
+add   cc-c3560-kacb-2219-r6
+add 
+add ^C
+add !
+add line con 0
+add password [deleted]
+add line vty 0 4
+add  access-class access-vty-in in
+add password [deleted]
+add line vty 5 15
+add  access-class access-vty-in in
+add !
+add end

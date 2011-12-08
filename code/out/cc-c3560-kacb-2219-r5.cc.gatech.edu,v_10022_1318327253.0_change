@@ -1,0 +1,16 @@
+add !VLAN: 7    GT-CC-cc                         active    Gi0/4, Gi0/7, Gi0/9, Gi0/11
+add !VLAN:                                                 Gi0/30, Gi0/37, Gi0/46
+del !VLAN: 7    GT-CC-cc                         active    Gi0/7, Gi0/9, Gi0/11, Gi0/30
+del !VLAN:                                                 Gi0/37, Gi0/46
+add !VLAN: 17   GT-CC-core                       active    Gi0/1, Gi0/2, Gi0/3, Gi0/5
+add !VLAN:                                                 Gi0/6, Gi0/10, Gi0/12, Gi0/13
+add !VLAN:                                                 Gi0/14, Gi0/17, Gi0/18, Gi0/19
+add !VLAN:                                                 Gi0/20, Gi0/22, Gi0/24, Gi0/29
+add !VLAN:                                                 Gi0/43
+del !VLAN: 17   GT-CC-core                       active    Gi0/1, Gi0/2, Gi0/3, Gi0/4
+del !VLAN:                                                 Gi0/5, Gi0/6, Gi0/10, Gi0/12
+del !VLAN:                                                 Gi0/13, Gi0/14, Gi0/17, Gi0/18
+del !VLAN:                                                 Gi0/19, Gi0/20, Gi0/22, Gi0/24
+del !VLAN:                                                 Gi0/29, Gi0/43
+add  switchport access vlan 7
+del  switchport access vlan 17

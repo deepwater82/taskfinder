@@ -1,0 +1,41 @@
+add !Flash:   464  -rwx        9510  Oct 10 1993 01:00:50 +00:00  config.text
+add !Flash:   465  -rwx        1944  Oct 10 1993 01:00:50 +00:00  private-config.text
+add !Flash:   466  -rwx        1048  Oct 10 1993 01:00:50 +00:00  multiple-fs
+del !Flash:   464  -rwx        9448   Oct 6 1993 16:50:37 +00:00  config.text
+del !Flash:   465  -rwx        1944   Oct 6 1993 16:50:37 +00:00  private-config.text
+del !Flash:   466  -rwx        1048   Oct 6 1993 16:50:37 +00:00  multiple-fs
+add !Flash: nvram:   501  -rw-        9510                    <no date>  startup-config
+del !Flash: nvram:   501  -rw-        9448                    <no date>  startup-config
+add !Flash: nvram: 524288 bytes total (511758 bytes free)
+del !Flash: nvram: 524288 bytes total (511820 bytes free)
+add !VTP: Configuration Revision          : 22
+del !VTP: Configuration Revision          : 20
+add !VTP: Number of existing VLANs        : 19
+del !VTP: Number of existing VLANs        : 18
+add !VTP: MD5 digest                      : 0x07 0x79 0xA3 0xC7 0x4D 0x37 0x81 0xC7 
+del !VTP: MD5 digest                      : 0x75 0xB1 0x8D 0xE3 0x56 0x72 0xD8 0xE0 
+add !VLAN: 7    GT-CC-cc                         active    Gi0/1, Gi0/13, Gi0/17, Gi0/19
+add !VLAN:                                                 Gi0/20, Gi0/21, Gi0/22, Gi0/23
+add !VLAN:                                                 Gi0/25, Gi0/26, Gi0/27, Gi0/28
+add !VLAN:                                                 Gi0/33, Gi0/35, Gi0/47, Gi0/48
+del !VLAN: 7    GT-CC-cc                         active    Gi0/1, Gi0/13, Gi0/15, Gi0/17
+del !VLAN:                                                 Gi0/19, Gi0/20, Gi0/21, Gi0/22
+del !VLAN:                                                 Gi0/23, Gi0/25, Gi0/26, Gi0/27
+del !VLAN:                                                 Gi0/28, Gi0/29, Gi0/33, Gi0/35
+del !VLAN:                                                 Gi0/47, Gi0/48
+add !VLAN: 115  GT-CC-ihpc3                      active    Gi0/15, Gi0/29
+add !VLAN: 115  enet  100115     1500  -      -      -        -    -        0      0   
+add  description PASTA24
+add  switchport access vlan 115
+del  description Ix
+del  switchport access vlan 7
+add  speed 1000
+add  duplex full
+add  description PASTA25
+add  switchport access vlan 115
+del  description Rhampora
+del  switchport access vlan 7
+add  speed 1000
+add  duplex full
+add  switchport trunk allowed vlan 2,6,7,17,29,30,107,112,114,115,275,669,691,999
+del  switchport trunk allowed vlan 2,6,7,17,29,30,107,112,114,275,669,691,999

@@ -1,0 +1,17 @@
+add !Flash:     4  -rwx        8457  Jul 12 1993 21:05:10 +00:00  config.text
+add !Flash:   464  -rwx        1948  Jul 12 1993 21:05:10 +00:00  private-config.text
+add !Flash:   466  -rwx        1048  Jul 12 1993 21:05:10 +00:00  multiple-fs
+del !Flash:   464  -rwx        8334  Jun 21 1993 00:37:40 +00:00  config.text
+del !Flash:   465  -rwx        1048  Jun 21 1993 00:37:40 +00:00  multiple-fs
+del !Flash:   466  -rwx        1948  Jun 21 1993 00:37:40 +00:00  private-config.text
+add !Flash: nvram:   502  -rw-        8457                    <no date>  startup-config
+del !Flash: nvram:   502  -rw-        8334                    <no date>  startup-config
+add !Flash: nvram: 524288 bytes total (512807 bytes free)
+del !Flash: nvram: 524288 bytes total (512930 bytes free)
+add access-list 4 remark SNMP RW-community ACL
+add access-list 4 permit 130.207.252.232
+add access-list 5 permit 128.61.252.112
+add access-list 5 permit 130.207.6.13
+add access-list 5 remark SNMP RO-community ACL
+del access-list 5 permit 128.61.252.112
+del access-list 5 permit 130.207.6.13

@@ -1,0 +1,20 @@
+del !Flash:     4  -rwx        1048  Mar 30 1993 18:34:54 +00:00  multiple-fs
+add !Flash:   464  -rwx        8334  Jun 21 1993 00:37:40 +00:00  config.text
+add !Flash:   465  -rwx        1048  Jun 21 1993 00:37:40 +00:00  multiple-fs
+add !Flash:   466  -rwx        1948  Jun 21 1993 00:37:40 +00:00  private-config.text
+del !Flash:   465  -rwx        1948  Mar 30 1993 18:34:54 +00:00  private-config.text
+del !Flash:   466  -rwx        8335  Mar 30 1993 18:34:54 +00:00  config.text
+add !Flash: nvram:   502  -rw-        8334                    <no date>  startup-config
+del !Flash: nvram:   502  -rw-        8335                    <no date>  startup-config
+add !Flash: nvram: 524288 bytes total (512930 bytes free)
+del !Flash: nvram: 524288 bytes total (512929 bytes free)
+add !VLAN: 6    GT-CC-os                         active    Gi0/23, Gi0/25, Gi0/34, Gi0/35
+add !VLAN:                                                 Gi0/38, Gi0/45
+del !VLAN: 6    GT-CC-os                         active    Gi0/23, Gi0/34, Gi0/35, Gi0/38
+del !VLAN:                                                 Gi0/45
+add !VLAN:                                                 Gi0/24, Gi0/30, Gi0/41, Gi0/43
+add !VLAN:                                                 Gi0/44, Gi0/46
+del !VLAN:                                                 Gi0/24, Gi0/25, Gi0/30, Gi0/41
+del !VLAN:                                                 Gi0/43, Gi0/44, Gi0/46
+add  switchport access vlan 6
+del  switchport access vlan 17

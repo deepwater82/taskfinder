@@ -1,0 +1,12 @@
+add !VTP: Configuration Revision          : 663
+del !VTP: Configuration Revision          : 660
+add !VTP: Number of existing VLANs        : 143
+del !VTP: Number of existing VLANs        : 146
+add !VTP: MD5 digest                      : 0x1F 0x42 0x66 0x5E 0x54 0xBB 0x57 0x79 
+del !VTP: MD5 digest                      : 0xD6 0x44 0xAB 0xEE 0x7D 0x67 0xDC 0x1D 
+del !VLAN: 38   GT-CHEM-38                       active    
+del !VLAN: 94   GT-ISYE-94                       active    
+del !VLAN: 95   GT-ISYE-95                       active    
+del !VLAN: 38   enet  100038     1500  -      -      -        -    -        0      0   
+del !VLAN: 94   enet  100094     1500  -      -      -        -    -        0      0   
+del !VLAN: 95   enet  100095     1500  -      -      -        -    -        0      0   

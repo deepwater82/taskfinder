@@ -1,0 +1,25 @@
+del !Flash:     3  -rwx        1048  Mar 28 1993 17:00:22 +00:00  multiple-fs
+add !Flash:   464  -rwx        9334  Mar 28 1993 22:55:52 +00:00  config.text
+add !Flash:   465  -rwx        1048  Mar 28 1993 22:55:53 +00:00  multiple-fs
+add !Flash:   466  -rwx        1944  Mar 28 1993 22:55:52 +00:00  private-config.text
+del !Flash:   465  -rwx        1944  Mar 28 1993 17:00:21 +00:00  private-config.text
+del !Flash:   466  -rwx        9326  Mar 28 1993 17:00:21 +00:00  config.text
+add !Flash: nvram:   501  -rw-        9334                    <no date>  startup-config
+del !Flash: nvram:   501  -rw-        9326                    <no date>  startup-config
+add !Flash: nvram: 524288 bytes total (511934 bytes free)
+del !Flash: nvram: 524288 bytes total (511942 bytes free)
+add !VLAN: 6    GT-CC-os                         active    Gi0/8, Gi0/10
+del !VLAN: 6    GT-CC-os                         active    Gi0/8, Gi0/10, Gi0/14
+add !VLAN: 17   GT-CC-core                       active    Gi0/2, Gi0/5, Gi0/14, Gi0/18
+add !VLAN:                                                 Gi0/32, Gi0/34, Gi0/37, Gi0/38
+add !VLAN:                                                 Gi0/39, Gi0/40, Gi0/41, Gi0/42
+add !VLAN:                                                 Gi0/43, Gi0/44, Gi0/45, Gi0/46
+add !VLAN:                                                 Gi0/47
+del !VLAN: 17   GT-CC-core                       active    Gi0/2, Gi0/5, Gi0/18, Gi0/32
+del !VLAN:                                                 Gi0/34, Gi0/37, Gi0/38, Gi0/39
+del !VLAN:                                                 Gi0/40, Gi0/41, Gi0/42, Gi0/43
+del !VLAN:                                                 Gi0/44, Gi0/45, Gi0/46, Gi0/47
+add  description falconberger
+add  switchport access vlan 17
+del  description Haven
+del  switchport access vlan 6

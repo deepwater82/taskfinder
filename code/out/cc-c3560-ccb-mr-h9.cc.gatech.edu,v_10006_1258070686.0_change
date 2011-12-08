@@ -1,0 +1,6 @@
+add !VTP: Configuration Revision          : 652
+del !VTP: Configuration Revision          : 651
+add !VTP: MD5 digest                      : 0x68 0x8F 0x4C 0xAB 0xDD 0x7A 0x71 0x0F 
+del !VTP: MD5 digest                      : 0x23 0x27 0xC0 0x3C 0x68 0xFE 0x94 0x2D 
+add !VLAN: 275  GT-CC-steelcase-pvt              active    
+del !VLAN: 275  GT-CC-camera-pvt                 active    

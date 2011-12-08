@@ -1,0 +1,24 @@
+del !Flash:     3  -rwx        1048   Nov 9 1993 22:22:26 +00:00  multiple-fs
+add !Flash:   464  -rwx        9579  Nov 10 1993 21:26:30 +00:00  config.text
+add !Flash:   465  -rwx        1944  Nov 10 1993 21:26:31 +00:00  private-config.text
+add !Flash:   466  -rwx        1048  Nov 10 1993 21:26:31 +00:00  multiple-fs
+del !Flash:   465  -rwx        9580   Nov 9 1993 22:22:25 +00:00  config.text
+del !Flash:   466  -rwx        1944   Nov 9 1993 22:22:25 +00:00  private-config.text
+add !Flash: nvram:   501  -rw-        9579                    <no date>  startup-config
+del !Flash: nvram:   501  -rw-        9580                    <no date>  startup-config
+add !Flash: nvram: 524288 bytes total (511689 bytes free)
+del !Flash: nvram: 524288 bytes total (511688 bytes free)
+add !VLAN: 17   GT-CC-core                       active    Gi0/2, Gi0/5, Gi0/7, Gi0/8
+add !VLAN:                                                 Gi0/9, Gi0/14, Gi0/18, Gi0/32
+add !VLAN:                                                 Gi0/37, Gi0/38, Gi0/39, Gi0/40
+add !VLAN:                                                 Gi0/41, Gi0/43, Gi0/44, Gi0/45
+add !VLAN:                                                 Gi0/46
+del !VLAN: 17   GT-CC-core                       active    Gi0/2, Gi0/5, Gi0/8, Gi0/9
+del !VLAN:                                                 Gi0/14, Gi0/18, Gi0/32, Gi0/37
+del !VLAN:                                                 Gi0/38, Gi0/39, Gi0/40, Gi0/41
+del !VLAN:                                                 Gi0/43, Gi0/44, Gi0/45, Gi0/46
+add !VLAN: 112  GT-CC-testsubnet                 active    Gi0/3, Gi0/6, Gi0/16, Gi0/36
+del !VLAN: 112  GT-CC-testsubnet                 active    Gi0/3, Gi0/6, Gi0/7, Gi0/16
+del !VLAN:                                                 Gi0/36
+add  switchport access vlan 17
+del  switchport access vlan 112

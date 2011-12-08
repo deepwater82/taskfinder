@@ -1,0 +1,2 @@
+del  switchport access vlan 114
+del  spanning-tree portfast

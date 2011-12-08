@@ -1,0 +1,8 @@
+add !VTP: Configuration Revision          : 664
+del !VTP: Configuration Revision          : 663
+add !VTP: Number of existing VLANs        : 144
+del !VTP: Number of existing VLANs        : 143
+add !VTP: MD5 digest                      : 0xE6 0x12 0xD1 0x2D 0x56 0x9A 0x2C 0xF5 
+del !VTP: MD5 digest                      : 0x1F 0x42 0x66 0x5E 0x54 0xBB 0x57 0x79 
+add !VLAN: 285  VLAN0285                         active    
+add !VLAN: 285  enet  100285     1500  -      -      -        -    -        0      0   

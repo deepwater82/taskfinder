@@ -1,0 +1,56 @@
+add !Memory: main 131072K
+del !Memory: main 122880K/8184K
+add !Image: Software: C3560-IPBASEK9-M, 12.2(50)SE3, RELEASE SOFTWARE (fc1)
+add !Image: Compiled: Wed 22-Jul-09 06:41 by prod_rel_team
+add !Image: flash:c3560-ipbasek9-mz.122-50.SE3.bin
+del !Image: Software: C3560-IPBASEK9-M, 12.2(50)SE1, RELEASE SOFTWARE (fc2)
+del !Image: Compiled: Mon 06-Apr-09 08:00 by amvarma
+del !Image: flash:c3560-ipbasek9-mz.122-50.SE1.bin
+add !Flash:     4  -rwx        9531   Mar 1 1993 00:04:43 +00:00  config.text
+add !Flash:     5  -rwx        2072   Mar 1 1993 00:04:43 +00:00  multiple-fs
+del !Flash:     5  -rwx        1945  Dec 17 1993 19:17:01 +00:00  private-config.text
+del !Flash:     6  -rwx        1048  Dec 17 1993 19:17:01 +00:00  multiple-fs
+add !Flash:   466  -rwx        3859   Mar 1 1993 00:04:43 +00:00  private-config.text
+add !Flash: 32514048 bytes total (3502080 bytes free)
+del !Flash:   466  -rwx        9233  Dec 17 1993 19:17:01 +00:00  config.text
+del !Flash: 32514048 bytes total (3505152 bytes free)
+add !Flash: nvram:   497  -rw-        9531                    <no date>  startup-config
+add !Flash: nvram:   498  ----        3859                    <no date>  private-config
+del !Flash: nvram:   505  -rw-        9233                    <no date>  startup-config
+del !Flash: nvram:   506  ----        1945                    <no date>  private-config
+add !Flash: nvram:     2  -rw-         605                    <no date>  IOS-Self-Sig#3232.cer
+add !Flash: nvram: 524288 bytes total (508798 bytes free)
+del !Flash: nvram: 524288 bytes total (512034 bytes free)
+add crypto pki trustpoint TP-self-signed-3021276032
+add  enrollment selfsigned
+add  subject-name cn=IOS-Self-Signed-Certificate-3021276032
+add  revocation-check none
+add  rsakeypair TP-self-signed-3021276032
+add !
+add crypto pki certificate chain TP-self-signed-3021276032
+add  certificate self-signed 01
+add   30820259 308201C2 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+add   31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+add   69666963 6174652D 33303231 32373630 3332301E 170D3933 30333031 30303034 
+add   34315A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+add   4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 30323132 
+add   37363033 3230819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+add   8100D546 BD5649B9 E847EA99 20D783B4 9966AA03 CEC7E872 F669CFFD 5E8D8331 
+add   02A202F4 548A6AED CFC18D5A 29AC48AB E9BDCC80 D22F9BA9 189D46F6 037AFB1E 
+add   12600695 A0899760 C8C567DC 20D5E670 966EC194 CF0800B6 2D445F44 8D6E6F33 
+add   8EC1DDBC 94E73902 4A811558 D098FFDB 661C9A2E D82493D2 A49EAD41 15600220 
+add   43030203 010001A3 8180307E 300F0603 551D1301 01FF0405 30030101 FF302B06 
+add   03551D11 04243022 82206363 2D633335 36302D63 63622D6D 722D6839 2E63632E 
+add   67617465 63682E65 6475301F 0603551D 23041830 1680144B 1F095FE4 AE5AC827 
+add   3CE869D9 FCC86727 BF263830 1D060355 1D0E0416 04144B1F 095FE4AE 5AC8273C 
+add   E869D9FC C86727BF 2638300D 06092A86 4886F70D 01010405 00038181 004CF9D9 
+add   9F71DE56 5EA0D2F2 3210F66D 3AB99F18 2AE03D80 7CA3F8FE CC8DDE2B 6BB34F1A 
+add   30F8FA62 CF3528A3 5BEA555C 7F12AC34 B2216FAA 14A4CE10 941CC467 466466A2 
+add   18F092B6 F154766A 6F35CBA9 E6C30A07 3015C549 869979F3 7F205640 CA533848 
+add   095E1914 EB9C4460 990DB5B0 C2143B6F 2BBBA359 E95217AD 5A8255E6 BF
+add   quit
+add !
+add no spanning-tree vlan 1,817,888,891,893,900-901,906-907,971,997-999
+del no spanning-tree vlan 1,458,817,888,891,893,900-901,906-907,971,997-999
+add  switchport access vlan 114
+add  spanning-tree portfast

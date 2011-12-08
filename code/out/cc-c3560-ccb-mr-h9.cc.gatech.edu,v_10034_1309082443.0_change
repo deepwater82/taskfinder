@@ -1,0 +1,12 @@
+add no spanning-tree vlan 1,804-805,807-808,817,888,891,893,900-901,906-907,971,997
+add no spanning-tree vlan 998-999
+del no spanning-tree vlan 1,201,426,515,520,677,817,888,891,893,900-901,906-907,971
+del no spanning-tree vlan 997-999
+del  description mgt-dumbledore
+del  description hogwarts1
+del  description hogwarts2
+del  description hogwarts3
+del  description hogwarts4
+del  description hogwarts5
+del  description hogwarts6
+add  description mgt-can

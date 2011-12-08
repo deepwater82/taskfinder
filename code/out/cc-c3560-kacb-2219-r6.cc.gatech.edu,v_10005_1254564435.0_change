@@ -1,0 +1,16 @@
+add !VLAN: 2    GT-CC-ccadmin                    active    Gi0/3, Gi0/4, Gi0/6, Gi0/7
+add !VLAN:                                                 Gi0/16
+del !VLAN: 2    GT-CC-ccadmin                    active    Gi0/3, Gi0/4, Gi0/6, Gi0/7, Gi0/16
+add !VLAN: 7    GT-CC-cc                         active    Gi0/1, Gi0/13, Gi0/15, Gi0/17
+add !VLAN:                                                 Gi0/19, Gi0/20, Gi0/21, Gi0/22
+add !VLAN:                                                 Gi0/23, Gi0/25, Gi0/26, Gi0/27
+add !VLAN:                                                 Gi0/28, Gi0/29, Gi0/33, Gi0/35
+add !VLAN:                                                 Gi0/42, Gi0/48
+add !VLAN: 17   GT-CC-core                       active    Gi0/2, Gi0/5, Gi0/18, Gi0/32
+add !VLAN:                                                 Gi0/34, Gi0/37, Gi0/38, Gi0/39
+add !VLAN:                                                 Gi0/40, Gi0/41, Gi0/43, Gi0/44
+add !VLAN:                                                 Gi0/45, Gi0/46, Gi0/47
+del !VLAN: 7    GT-CC-cc                         active    Gi0/1, Gi0/13, Gi0/15, Gi0/17, Gi0/19, Gi0/20, Gi0/21, Gi0/22, Gi0/23, Gi0/25, Gi0/26
+del !VLAN:                                                 Gi0/27, Gi0/28, Gi0/29, Gi0/33, Gi0/35, Gi0/42, Gi0/48
+del !VLAN: 17   GT-CC-core                       active    Gi0/2, Gi0/5, Gi0/18, Gi0/32, Gi0/34, Gi0/37, Gi0/38, Gi0/39, Gi0/40, Gi0/41, Gi0/43
+del !VLAN:                                                 Gi0/44, Gi0/45, Gi0/46, Gi0/47

@@ -1,0 +1,5 @@
+add !Variable: BOOT path-list      : flash:c3560e-universalk9-mz.122-50.SE3.bin
+del !Variable: BOOT path-list      : flash:c3560e-universalk9-mz.122-46.SE.bin
+add !Flash:   463  -rwx    13097987  Aug 30 1994 04:19:41 +00:00  c3560e-universalk9-mz.122-50.SE3.bin
+add !Flash: 57409536 bytes total (20632576 bytes free)
+del !Flash: 57409536 bytes total (33837056 bytes free)

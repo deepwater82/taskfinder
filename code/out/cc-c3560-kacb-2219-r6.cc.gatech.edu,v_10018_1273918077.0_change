@@ -1,0 +1,24 @@
+del !Flash:     3  -rwx        1048  Sep 22 1993 15:40:33 +00:00  multiple-fs
+add !Flash:   464  -rwx        9448   Oct 6 1993 16:50:37 +00:00  config.text
+add !Flash:   465  -rwx        1944   Oct 6 1993 16:50:37 +00:00  private-config.text
+add !Flash:   466  -rwx        1048   Oct 6 1993 16:50:37 +00:00  multiple-fs
+del !Flash:   465  -rwx        9447  Sep 22 1993 15:40:33 +00:00  config.text
+del !Flash:   466  -rwx        1944  Sep 22 1993 15:40:33 +00:00  private-config.text
+add !Flash: nvram:   501  -rw-        9448                    <no date>  startup-config
+del !Flash: nvram:   501  -rw-        9447                    <no date>  startup-config
+add !Flash: nvram: 524288 bytes total (511820 bytes free)
+del !Flash: nvram: 524288 bytes total (511821 bytes free)
+add !VLAN:                                                 Gi0/9, Gi0/14, Gi0/18, Gi0/32
+add !VLAN:                                                 Gi0/37, Gi0/38, Gi0/39, Gi0/40
+add !VLAN:                                                 Gi0/41, Gi0/43, Gi0/44, Gi0/45
+add !VLAN:                                                 Gi0/46
+del !VLAN:                                                 Gi0/9, Gi0/14, Gi0/18, Gi0/30
+del !VLAN:                                                 Gi0/32, Gi0/37, Gi0/38, Gi0/39
+del !VLAN:                                                 Gi0/40, Gi0/41, Gi0/43, Gi0/44
+del !VLAN:                                                 Gi0/45, Gi0/46
+add !VLAN: 114  GT-CC-sweat                      active    Gi0/30
+del !VLAN: 114  GT-CC-sweat                      active    
+add  description hagrid
+add  switchport access vlan 114
+del  description Lennon
+del  switchport access vlan 17

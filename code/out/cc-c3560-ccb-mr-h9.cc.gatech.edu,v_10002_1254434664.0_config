@@ -1,0 +1,745 @@
+!RANCID-CONTENT-TYPE: cisco
+!
+!Chassis type: WS-C3560G-48TS - a 3500XL switch
+!CPU: PowerPC405
+!
+!Memory: main 122880K/8184K
+!Model revision number           : D0
+!Model number                    : WS-C3560G-48TS-S
+!Motherboard assembly number     : 73-10214-04
+!Motherboard serial number       : FOC13191NC3
+!Motherboard revision number     : D0
+!Power supply part number        : 341-0107-01
+!Power supply serial number      : AZS131121RK
+!
+!Processor ID: FOC1319W0TE
+!
+!
+!Image: Software: C3560-IPBASEK9-M, 12.2(50)SE1, RELEASE SOFTWARE (fc2)
+!Image: Compiled: Mon 06-Apr-09 08:00 by amvarma
+!Image: flash:c3560-ipbasek9-mz.122-50.SE1.bin
+!
+!BOOTLDR: Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)
+!
+!
+!
+!Variable: BOOT path-list      : flash:c3560-ipbasek9-mz.122-50.SE3.bin
+!Variable: Config file         : flash:/config.text
+!Variable: Private Config file : flash:/private-config.text
+!Variable: Enable Break        : no
+!Variable: Manual Boot         : no
+!Variable: HELPER path-list    : 
+!Variable: Auto upgrade        : yes
+!Variable: Auto upgrade path   : 
+!Variable: Timeout for Config
+!Variable:           Download:    0 seconds
+!Variable: Config Download 
+!Variable:        via DHCP:       disabled (next boot: disabled)
+!
+!Flash: Directory of flash:/
+!Flash:     3  -rwx     9962353   Mar 3 1993 02:20:44 +00:00  c3560-ipbasek9-mz.122-50.SE1.bin
+!Flash:     4  -rwx        1048  Jun 12 1993 23:41:24 +00:00  multiple-fs
+!Flash:     5  -rwx        8513  Jun 12 1993 23:41:24 +00:00  config.text
+!Flash:     6  -rwx        1945  Jun 12 1993 23:41:24 +00:00  private-config.text
+!Flash:     7  drwx         192   Mar 1 1993 00:12:10 +00:00  c3560-ipbase-mz.122-35.SE5
+!Flash:   465  -rwx     9968993  Jun 12 1993 22:26:22 +00:00  c3560-ipbasek9-mz.122-50.SE3.bin
+!Flash: 32514048 bytes total (3506176 bytes free)
+!
+!Flash: nvram: Directory of nvram:/
+!Flash: nvram:   505  -rw-        8513                    <no date>  startup-config
+!Flash: nvram:   506  ----        1945                    <no date>  private-config
+!Flash: nvram:     1  -rw-           0                    <no date>  ifIndex-table
+!Flash: nvram: 524288 bytes total (512754 bytes free)
+!
+!
+!VTP: VTP Version                     : running VTP2
+!VTP: Configuration Revision          : 649
+!VTP: Maximum VLANs supported locally : 1005
+!VTP: Number of existing VLANs        : 142
+!VTP: VTP Operating Mode              : Server
+!VTP: VTP Domain Name                 : GT-CC
+!VTP: VTP Pruning Mode                : Enabled
+!VTP: VTP V2 Mode                     : Enabled
+!VTP: VTP Traps Generation            : Disabled
+!VTP: MD5 digest                      : 0x7C 0xBE 0xF6 0x25 0x9F 0x2A 0x16 0x5F 
+!VTP: Local updater ID is 130.207.29.80 on interface Vl29 (lowest numbered VLAN interface found)
+!
+!VLAN: VLAN Name                             Status    Ports
+!VLAN: ---- -------------------------------- --------- -------------------------------
+!VLAN: 1    default                          active    Gi0/50, Gi0/51, Gi0/52
+!VLAN: 2    GT-CC-ccadmin                    active    
+!VLAN: 3    GT-CC-user                       active    
+!VLAN: 4    GT-CC-ai                         active    
+!VLAN: 5    GT-CC-sys                        active    
+!VLAN: 6    GT-CC-os                         active    
+!VLAN: 7    GT-CC-cc                         active    
+!VLAN: 8    GT-CC-telecom                    active    
+!VLAN: 9    GT-CC-ccfddi                     active    
+!VLAN: 10   GT-CC-nt3                        active    
+!VLAN: 11   GT-CC-nt2                        active    
+!VLAN: 12   GT-CC-class                      active    
+!VLAN: 13   GT-CC-isc                        active    
+!VLAN: 14   GT-CC-prt                        active    
+!VLAN: 15   GT-CC-nt1                        active    
+!VLAN: 16   GT-CC-infsec                     active    
+!VLAN: 17   GT-CC-anim                       active    
+!VLAN: 18   GT-CC-camera                     active    
+!VLAN: 19   GT-CC-prt2                       active    
+!VLAN: 20   GT-CC-ah                         active    
+!VLAN: 21   GT-CC-acad-hpc                   active    Gi0/19, Gi0/25, Gi0/27, Gi0/29
+!VLAN:                                                 Gi0/30, Gi0/31, Gi0/32, Gi0/33
+!VLAN:                                                 Gi0/34, Gi0/35, Gi0/36, Gi0/37
+!VLAN:                                                 Gi0/38
+!VLAN: 22   GT-CC-marc                       active    
+!VLAN: 23   GT-CC-asy                        active    
+!VLAN: 24   GT-CC-csl                        active    
+!VLAN: 25   GT-CC-srv2                       active    
+!VLAN: 26   GT-CC-vpn                        active    
+!VLAN: 27   GT-CC-vpntest                    active    
+!VLAN: 28   GT-CC-vpn2                       active    
+!VLAN: 29   GT-CC-supv-net                   active    
+!VLAN: 30   GT-CC-supv2                      active    Gi0/1, Gi0/2, Gi0/3, Gi0/4
+!VLAN:                                                 Gi0/5, Gi0/6, Gi0/7, Gi0/8
+!VLAN:                                                 Gi0/9, Gi0/10, Gi0/11, Gi0/12
+!VLAN:                                                 Gi0/13, Gi0/14, Gi0/15, Gi0/16
+!VLAN:                                                 Gi0/17, Gi0/18, Gi0/20, Gi0/22
+!VLAN:                                                 Gi0/26, Gi0/28
+!VLAN: 31   GT-CC-dial                       active    
+!VLAN: 38   GT-CHEM-38                       active    
+!VLAN: 61   GIT-com                          active    
+!VLAN: 70   internal-netlab                  active    
+!VLAN: 94   GT-ISYE-94                       active    
+!VLAN: 95   GT-ISYE-95                       active    
+!VLAN: 97   GT-CC-pt                         active    
+!VLAN: 98   GT-CC-stm                        active    
+!VLAN: 99   GT-CC-chmsr                      active    
+!VLAN: 100  GT-CC-ic-fac                     active    
+!VLAN: 101  GT-CC-cs-fac                     active    
+!VLAN: 102  GT-CC-cse-fac                    active    
+!VLAN: 103  GT-CC-aenv                       active    
+!VLAN: 104  GT-CC-db                         active    
+!VLAN: 105  GT-CC-cp                         active    
+!VLAN: 106  GT-CC-vc                         active    
+!VLAN: 107  GT-CC-ucl                        active    
+!VLAN: 108  GT-CC-rnoc                       active    
+!VLAN: 109  GT-CC-cprl                       active    
+!VLAN: 110  GT-CC-ihpc2                      active    
+!VLAN: 111  GT-CC-srv4                       active    
+!VLAN: 112  GT-CC-testsubnet                 active    
+!VLAN: 113  GT-CC-milkyway                   active    
+!VLAN: 114  GT-CC-sweat                      active    Gi0/21, Gi0/23, Gi0/24, Gi0/39
+!VLAN:                                                 Gi0/40, Gi0/41, Gi0/42, Gi0/43
+!VLAN:                                                 Gi0/44, Gi0/45, Gi0/46, Gi0/47
+!VLAN:                                                 Gi0/48
+!VLAN: 115  GT-CC-ihpc3                      active    
+!VLAN: 116  GT-CC-gator                      active    
+!VLAN: 117  GT-CC-ihpc                       active    
+!VLAN: 118  GT-CC-multi                      active    
+!VLAN: 119  GT-CC-gvu                        active    
+!VLAN: 120  GT-CC-cslab1                     active    
+!VLAN: 121  GT-CC-ic-res                     active    
+!VLAN: 122  GT-CC-cs-res                     active    
+!VLAN: 123  GT-CC-cse-res                    active    
+!VLAN: 124  GT-CC-ic-svr                     active    
+!VLAN: 125  GT-CC-cs-svr                     active    
+!VLAN: 126  GT-CC-cse-svr                    active    
+!VLAN: 127  GT-CC-tsoresearch                active    
+!VLAN: 128  GT-CC-out1                       active    
+!VLAN: 129  GT-CC-out2                       active    
+!VLAN: 130  GT-CC-iscx                       active    
+!VLAN: 131  GT-CC-out4                       active    
+!VLAN: 138  VLAN0138                         active    
+!VLAN: 149  GIT-pharos-149                   active    
+!VLAN: 177  GIT-oit-177                      active    
+!VLAN: 189  VLAN0189                         active    
+!VLAN: 251  GIT-gorillas                     active    
+!VLAN: 257  VLAN0257                         active    
+!VLAN: 260  GT-CC-comm-pvt-260               active    
+!VLAN: 261  GT-CC-comm-pvt-261               active    
+!VLAN: 262  GT-CC-comm-pvt-262               active    
+!VLAN: 263  GT-CC-comm-pvt-263               active    
+!VLAN: 264  GT-CC-comm-pvt-264               active    
+!VLAN: 265  GT-CC-comm-pvt-265               active    
+!VLAN: 266  GT-CC-comm-pvt-266               active    
+!VLAN: 267  GT-CC-comm-pvt-267               active    
+!VLAN: 268  GT-CC-comm-pvt-268               active    
+!VLAN: 269  GT-CC-comm-pvt-269               active    
+!VLAN: 270  GT-CC-sys-pvt-270                active    
+!VLAN: 272  GT-CC-gis2-232                   active    
+!VLAN: 273  GT-CC-3d                         active    
+!VLAN: 274  GT-CC-lsvc                       active    
+!VLAN: 275  GT-CC-camera-pvt                 active    
+!VLAN: 276  GT-CC-camera-public              active    
+!VLAN: 278  GT-CC-infosec-pvt                active    
+!VLAN: 279  GT-CC-gtisc-pvt-red              active    
+!VLAN: 280  GT-CC-wwx-0                      active    
+!VLAN: 281  GT-CC-wwi-32                     active    
+!VLAN: 282  GT-CC-vpnpool                    active    
+!VLAN: 283  GT-CC-ocs-96                     active    
+!VLAN: 286  GT-CC-buzzcard                   active    
+!VLAN: 288  GT-CC-sys3-108-156               active    
+!VLAN: 290  GT-CC-290                        active    
+!VLAN: 291  GT-CC-cercs-mgt                  active    
+!VLAN: 292  GT-CC-cercs-pvt-292              active    
+!VLAN: 295  GT-CC-SR-jetson                  active    
+!VLAN: 296  GT-CC-Sec                        active    
+!VLAN: 298  GT-CC-chappai-ai                 active    
+!VLAN: 299  GT-CC-SR-gaia                    active    
+!VLAN: 400  VLAN0400                         active    
+!VLAN: 443  GIT-HSI                          active    
+!VLAN: 456  GIT-facilities                   active    
+!VLAN: 492  GIT-TSRB-492                     active    
+!VLAN: 567  GIT-ORNL                         active    
+!VLAN: 583  GIT-ORNL2                        active    
+!VLAN: 670  GT-CC-voip                       active    
+!VLAN: 672  GT-CC-blackbook                  active    
+!VLAN: 673  GT-CC-iis                        active    
+!VLAN: 694  VLAN0694                         active    
+!VLAN: 738  GT-CC-emulab                     active    
+!VLAN: 744  IMTC-GCATT-TSRB-744              active    
+!VLAN: 754  VLAN0754                         active    
+!VLAN: 799  GIT-LCC                          active    
+!VLAN: 804  GIT-lawn-804                     active    
+!VLAN: 805  GIT-oit-805                      active    
+!VLAN: 808  GIT-lawn-808                     active    
+!VLAN: 809  GIT-oit-809                      active    
+!VLAN: 817  IMTC-GCATT-TSRB-817              active    
+!VLAN: 888  GT-CC-spare-138-128              active    
+!VLAN: 891  GIT-oit-891                      active    
+!VLAN: 893  GIT-oit-893                      active    
+!VLAN: 900  RSPAN                            active    
+!VLAN: 901  RSPAN-GTISC                      active    
+!VLAN: 906  GIT-bgp-research                 active    
+!VLAN: 970  GT-CC-openflow                   active    
+!VLAN: 971  VLAN0971                         active    
+!VLAN: 997  GIT-oit-997                      active    
+!VLAN: 998  GIT-facil-998                    active    
+!VLAN: 999  GIT-oit-999                      active    
+!VLAN: 1002 fddi-default                     act/unsup 
+!VLAN: 1003 trcrf-default                    act/unsup 
+!VLAN: 1004 fddinet-default                  act/unsup 
+!VLAN: 1005 trbrf-default                    act/unsup 
+!VLAN: VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+!VLAN: ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+!VLAN: 1    enet  100001     1500  -      -      -        -    -        0      0   
+!VLAN: 2    enet  100002     1500  -      -      -        -    -        0      0   
+!VLAN: 3    enet  100003     1500  -      -      -        -    -        0      0   
+!VLAN: 4    enet  100004     1500  -      -      -        -    -        0      0   
+!VLAN: 5    enet  100005     1500  -      -      -        -    -        0      0   
+!VLAN: 6    enet  100006     1500  -      -      -        -    -        0      0   
+!VLAN: 7    enet  100007     1500  -      -      -        -    -        0      0   
+!VLAN: 8    enet  100008     1500  -      -      -        -    -        0      0   
+!VLAN: 9    enet  100009     1500  -      -      -        -    -        0      0   
+!VLAN: 10   enet  100010     1500  -      -      -        -    -        0      0   
+!VLAN: 11   enet  100011     1500  -      -      -        -    -        0      0   
+!VLAN: 12   enet  100012     1500  -      -      -        -    -        0      0   
+!VLAN: 13   enet  100013     1500  -      -      -        -    -        0      0   
+!VLAN: 14   enet  100014     1500  -      -      -        -    -        0      0   
+!VLAN: 15   enet  100015     1500  -      -      -        -    -        0      0   
+!VLAN: 16   enet  100016     1500  -      -      -        -    -        0      0   
+!VLAN: 17   enet  100017     1500  -      -      -        -    -        0      0   
+!VLAN: 18   enet  100018     1500  -      -      -        -    -        0      0   
+!VLAN: 19   enet  100019     1500  -      -      -        -    -        0      0   
+!VLAN: 20   enet  100020     1500  -      -      -        -    -        0      0   
+!VLAN: 21   enet  100021     1500  -      -      -        -    -        0      0   
+!VLAN: 22   enet  100022     1500  -      -      -        -    -        0      0   
+!VLAN: 23   enet  100023     1500  -      -      -        -    -        0      0   
+!VLAN: 24   enet  100024     1500  -      -      -        -    -        0      0   
+!VLAN: 25   enet  100025     1500  -      -      -        -    -        0      0   
+!VLAN: 26   enet  100026     1500  -      -      -        -    -        0      0   
+!VLAN: 27   enet  100027     1500  -      -      -        -    -        0      0   
+!VLAN: 28   enet  100028     1500  -      -      -        -    -        0      0   
+!VLAN: 29   enet  100029     1500  -      -      -        -    -        0      0   
+!VLAN: 30   enet  100030     1500  -      -      -        -    -        0      0   
+!VLAN: 31   enet  100031     1500  -      -      -        -    -        0      0   
+!VLAN: 38   enet  100038     1500  -      -      -        -    -        0      0   
+!VLAN: 61   enet  100061     1500  -      -      -        -    -        0      0   
+!VLAN: 70   enet  100070     1500  -      -      -        -    -        0      0   
+!VLAN: 94   enet  100094     1500  -      -      -        -    -        0      0   
+!VLAN: 95   enet  100095     1500  -      -      -        -    -        0      0   
+!VLAN: 97   enet  100097     1500  -      -      -        -    -        0      0   
+!VLAN: 98   enet  100098     1500  -      -      -        -    -        0      0   
+!VLAN: 99   enet  100099     1500  -      -      -        -    -        0      0   
+!VLAN: 100  enet  100100     1500  -      -      -        -    -        0      0   
+!VLAN: 101  enet  100101     1500  -      -      -        -    -        0      0   
+!VLAN: 102  enet  100102     1500  -      -      -        -    -        0      0   
+!VLAN: 103  enet  100103     1500  -      -      -        -    -        0      0   
+!VLAN: 104  enet  100104     1500  -      -      -        -    -        0      0   
+!VLAN: 105  enet  100105     1500  -      -      -        -    -        0      0   
+!VLAN: 106  enet  100106     1500  -      -      -        -    -        0      0   
+!VLAN: 107  enet  100107     1500  -      -      -        -    -        0      0   
+!VLAN: 108  enet  100108     1500  -      -      -        -    -        0      0   
+!VLAN: 109  enet  100109     1500  -      -      -        -    -        0      0   
+!VLAN: 110  enet  100110     1500  -      -      -        -    -        0      0   
+!VLAN: 111  enet  100111     1500  -      -      -        -    -        0      0   
+!VLAN: 112  enet  100112     1500  -      -      -        -    -        0      0   
+!VLAN: 113  enet  100113     1500  -      -      -        -    -        0      0   
+!VLAN: 114  enet  100114     1500  -      -      -        -    -        0      0   
+!VLAN: 115  enet  100115     1500  -      -      -        -    -        0      0   
+!VLAN: 116  enet  100116     1500  -      -      -        -    -        0      0   
+!VLAN: 117  enet  100117     1500  -      -      -        -    -        0      0   
+!VLAN: 118  enet  100118     1500  -      -      -        -    -        0      0   
+!VLAN: 119  enet  100119     1500  -      -      -        -    -        0      0   
+!VLAN: 120  enet  100120     1500  -      -      -        -    -        0      0   
+!VLAN: 121  enet  100121     1500  -      -      -        -    -        0      0   
+!VLAN: 122  enet  100122     1500  -      -      -        -    -        0      0   
+!VLAN: 123  enet  100123     1500  -      -      -        -    -        0      0   
+!VLAN: 124  enet  100124     1500  -      -      -        -    -        0      0   
+!VLAN: 125  enet  100125     1500  -      -      -        -    -        0      0   
+!VLAN: 126  enet  100126     1500  -      -      -        -    -        0      0   
+!VLAN: 127  enet  100127     1500  -      -      -        -    -        0      0   
+!VLAN: 128  enet  100128     1500  -      -      -        -    -        0      0   
+!VLAN: 129  enet  100129     1500  -      -      -        -    -        0      0   
+!VLAN: 130  enet  100130     1500  -      -      -        -    -        0      0   
+!VLAN: 131  enet  100131     1500  -      -      -        -    -        0      0   
+!VLAN: 138  enet  100138     1500  -      -      -        -    -        0      0   
+!VLAN: 149  enet  100149     1500  -      -      -        -    -        0      0   
+!VLAN: 177  enet  100177     1500  -      -      -        -    -        0      0   
+!VLAN: 189  enet  100189     1500  -      -      -        -    -        0      0   
+!VLAN: 251  enet  100251     1500  -      -      -        -    -        0      0   
+!VLAN: 257  enet  100257     1500  -      -      -        -    -        0      0   
+!VLAN: 260  enet  100260     1500  -      -      -        -    -        0      0   
+!VLAN: 261  enet  100261     1500  -      -      -        -    -        0      0   
+!VLAN: 262  enet  100262     1500  -      -      -        -    -        0      0   
+!VLAN: 263  enet  100263     1500  -      -      -        -    -        0      0   
+!VLAN: 264  enet  100264     1500  -      -      -        -    -        0      0   
+!VLAN: 265  enet  100265     1500  -      -      -        -    -        0      0   
+!VLAN: 266  enet  100266     1500  -      -      -        -    -        0      0   
+!VLAN: 267  enet  100267     1500  -      -      -        -    -        0      0   
+!VLAN: 268  enet  100268     1500  -      -      -        -    -        0      0   
+!VLAN: 269  enet  100269     1500  -      -      -        -    -        0      0   
+!VLAN: 270  enet  100270     1500  -      -      -        -    -        0      0   
+!VLAN: 272  enet  100272     1500  -      -      -        -    -        0      0   
+!VLAN: 273  enet  100273     1500  -      -      -        -    -        0      0   
+!VLAN: 274  enet  100274     1500  -      -      -        -    -        0      0   
+!VLAN: 275  enet  100275     1500  -      -      -        -    -        0      0   
+!VLAN: 276  enet  100276     1500  -      -      -        -    -        0      0   
+!VLAN: 278  enet  100278     1500  -      -      -        -    -        0      0   
+!VLAN: 279  enet  100279     1500  -      -      -        -    -        0      0   
+!VLAN: 280  enet  100280     1500  -      -      -        -    -        0      0   
+!VLAN: 281  enet  100281     1500  -      -      -        -    -        0      0   
+!VLAN: 282  enet  100282     1500  -      -      -        -    -        0      0   
+!VLAN: 283  enet  100283     1500  -      -      -        -    -        0      0   
+!VLAN: 286  enet  100286     1500  -      -      -        -    -        0      0   
+!VLAN: 288  enet  100288     1500  -      -      -        -    -        0      0   
+!VLAN: 290  enet  100290     1500  -      -      -        -    -        0      0   
+!VLAN: 291  enet  100291     1500  -      -      -        -    -        0      0   
+!VLAN: 292  enet  100292     1500  -      -      -        -    -        0      0   
+!VLAN: 295  enet  100295     1500  -      -      -        -    -        0      0   
+!VLAN: 296  enet  100296     1500  -      -      -        -    -        0      0   
+!VLAN: 298  enet  100298     1500  -      -      -        -    -        0      0   
+!VLAN: 299  enet  100299     1500  -      -      -        -    -        0      0   
+!VLAN: 400  enet  100400     1500  -      -      -        -    -        0      0   
+!VLAN: 443  enet  100443     1500  -      -      -        -    -        0      0   
+!VLAN: 456  enet  100456     1500  -      -      -        -    -        0      0   
+!VLAN: 492  enet  100492     1500  -      -      -        -    -        0      0   
+!VLAN: 567  enet  100567     1500  -      -      -        -    -        0      0   
+!VLAN: 583  enet  100583     1500  -      -      -        -    -        0      0   
+!VLAN: 670  enet  100670     1500  -      -      -        -    -        0      0   
+!VLAN: 672  enet  100672     1500  -      -      -        -    -        0      0   
+!VLAN: 673  enet  100673     1500  -      -      -        -    -        0      0   
+!VLAN: 694  enet  100694     1500  -      -      -        -    -        0      0   
+!VLAN: 738  enet  100738     1500  -      -      -        -    -        0      0   
+!VLAN: 744  enet  100744     1500  -      -      -        -    -        0      0   
+!VLAN: 754  enet  100754     1500  -      -      -        -    -        0      0   
+!VLAN: 799  enet  100799     1500  -      -      -        -    -        0      0   
+!VLAN: 804  enet  100804     1500  -      -      -        -    -        0      0   
+!VLAN: 805  enet  100805     1500  -      -      -        -    -        0      0   
+!VLAN: 808  enet  100808     1500  -      -      -        -    -        0      0   
+!VLAN: 809  enet  100809     1500  -      -      -        -    -        0      0   
+!VLAN: 817  enet  100817     1500  -      -      -        -    -        0      0   
+!VLAN: 888  enet  100888     1500  -      -      -        -    -        0      0   
+!VLAN: 891  enet  100891     1500  -      -      -        -    -        0      0   
+!VLAN: 893  enet  100893     1500  -      -      -        -    -        0      0   
+!VLAN: 900  enet  100900     1500  -      -      -        -    -        0      0   
+!VLAN: 901  enet  100901     1500  -      -      -        -    -        0      0   
+!VLAN: 906  enet  100906     1500  -      -      -        -    -        0      0   
+!VLAN: 970  enet  100970     1500  -      -      -        -    -        0      0   
+!VLAN: 971  enet  100971     1500  -      -      -        -    -        0      0   
+!VLAN: 997  enet  100997     1500  -      -      -        -    -        0      0   
+!VLAN: 998  enet  100998     1500  -      -      -        -    -        0      0   
+!VLAN: 999  enet  100999     1500  -      -      -        -    -        0      0   
+!VLAN: 1002 fddi  101002     1500  -      -      -        -    -        0      0   
+!VLAN: 1003 trcrf 101003     4472  1005   3276   -        -    -        0      0   
+!VLAN: 1004 fdnet 101004     1500  -      -      -        -    -        0      0   
+!VLAN: 1005 trbrf 101005     4472  -      -      15       ieee -        0      0   
+!VLAN: VLAN AREHops STEHops Backup CRF
+!VLAN: ---- ------- ------- ----------
+!VLAN: 1003 0       0       off
+!VLAN: Remote SPAN VLANs
+!VLAN: ------------------------------------------------------------------------------
+!VLAN: 900-901
+!VLAN: Primary Secondary Type              Ports
+!VLAN: ------- --------- ----------------- ------------------------------------------
+!
+!
+config-register 0xF
+version 12.2
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+service password-encryption
+!
+hostname cc-c3560-ccb-mr-h9
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret [deleted]
+!
+username [deleted]
+username [deleted]
+aaa new-model
+!
+aaa authentication login default group tacacs+ local
+aaa authentication enable default group tacacs+ enable
+aaa authorization exec default group tacacs+ local 
+!
+aaa session-id common
+system mtu routing 1500
+ip subnet-zero
+ip domain-name cc.gatech.edu
+ip name-server 130.207.17.21
+ip name-server 130.207.17.22
+!
+spanning-tree mode pvst
+spanning-tree etherchannel guard misconfig
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+interface GigabitEthernet0/1
+ description mgt-hogwarts1
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/2
+ description mgt-hogwarts2
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/3
+ description mgt-hogwarts3
+ switchport access vlan 30
+ switchport mode access
+!
+interface GigabitEthernet0/4
+ description mgt-hogwarts4
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/5
+ description mgt-hogwarts5
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/6
+ description mgt-hogwarts6
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/7
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/8
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/9
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/10
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/11
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/12
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/13
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/14
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/15
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/16
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/17
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/18
+ switchport access vlan 30
+ switchport mode access
+!
+interface GigabitEthernet0/19
+ description warp10 eth0
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/20
+ description mgt-warp1
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/21
+ description warp11 eth0
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/22
+ description mgt-warp2
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/23
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/24
+ description dumbledore
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/25
+ switchport access vlan 21
+ switchport mode access
+!
+interface GigabitEthernet0/26
+ description mgt-cochrane
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/27
+ description warp7
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/28
+ description mgt-warp7
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/29
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/30
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/31
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/32
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/33
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/34
+ description warp3 eth0
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/35
+ description warp2 eth0
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/36
+ description warp1 eth0
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/37
+ description zefram
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/38
+ description newcochrane
+ switchport access vlan 21
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/39
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/40
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/41
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/42
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/43
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/44
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/45
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/46
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/47
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/48
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/49
+ description uplink
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 29
+ switchport trunk allowed vlan 11,21,29-31,114
+ switchport mode trunk
+!
+interface GigabitEthernet0/50
+!
+interface GigabitEthernet0/51
+!
+interface GigabitEthernet0/52
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan29
+ ip address 130.207.29.80 255.255.255.0
+!
+ip default-gateway 130.207.29.1
+ip classless
+ip http server
+ip http secure-server
+!
+ip access-list extended access-vty-in
+ permit tcp 130.207.252.0 0.0.0.255 any range 22 telnet log-input
+ permit tcp 128.61.5.0 0.0.0.255 any range 22 telnet log-input
+ permit tcp 128.61.252.0 0.0.0.255 any range 22 telnet log-input
+ permit tcp 130.207.13.0 0.0.0.255 any range 22 telnet log-input
+ permit tcp 130.207.29.0 0.0.0.255 any range 22 telnet log-input
+ permit tcp host 130.207.161.14 any range 22 telnet log-input
+ permit tcp host 130.207.166.15 any range 22 telnet log-input
+ permit tcp host 130.207.166.16 any range 22 telnet log-input
+ permit tcp host 130.207.6.13 any range 22 telnet log-input
+ permit tcp host 130.207.127.6 any range 22 telnet log-input
+ permit tcp host 130.207.127.7 any range 22 telnet log-input
+ permit tcp 130.207.27.224 0.0.0.31 any range 22 telnet log-input
+!
+logging facility local2
+logging 130.207.17.25
+access-list 5 permit 128.61.5.211
+access-list 5 permit 128.61.252.110 0.0.0.1
+access-list 5 permit 128.61.252.112
+access-list 5 permit 130.207.6.13
+access-list 5 permit 130.207.17.0 0.0.0.255
+access-list 5 permit 130.207.29.0 0.0.0.255
+access-list 5 permit 130.207.252.21
+access-list 5 permit 130.207.252.224 0.0.0.15
+access-list 5 deny   any
+snmp-server community [deleted]
+snmp-server community [deleted]
+tacacs-server host 130.207.252.41
+tacacs-server host 130.207.252.42
+tacacs-server directed-request
+tacacs-server key [deleted]
+!
+control-plane
+!
+banner motd ^C
+
+  cc-c3560-ccb-mr-h9
+
+^C
+!
+line con 0
+password [deleted]
+line vty 0 4
+ access-class access-vty-in in
+password [deleted]
+line vty 5 15
+ access-class access-vty-in in
+!
+end
+@
+
+

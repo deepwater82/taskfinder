@@ -1,0 +1,6 @@
+add !VTP: Configuration Revision          : 660
+del !VTP: Configuration Revision          : 659
+add !VTP: MD5 digest                      : 0xD6 0x44 0xAB 0xEE 0x7D 0x67 0xDC 0x1D 
+del !VTP: MD5 digest                      : 0xD5 0xCE 0xF1 0x25 0x64 0x0B 0xED 0x6C 
+add !VLAN: 28   GT-CC-supv4                      active    
+del !VLAN: 28   GT-CC-supv3                      active    
