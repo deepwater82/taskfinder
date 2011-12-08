@@ -1,8 +1,0 @@
-add !VTP: Configuration Revision          : 655
-del !VTP: Configuration Revision          : 653
-add !VTP: MD5 digest                      : 0x3D 0xB3 0x3E 0x42 0x47 0x5C 0x8D 0x0C 
-del !VTP: MD5 digest                      : 0xDB 0x78 0xA8 0x07 0xB2 0xDF 0xAA 0x0C 
-add !VLAN: 907  GT-CC-openflow                   active    
-del !VLAN: 970  GT-CC-openflow                   active    
-add !VLAN: 907  enet  100907     1500  -      -      -        -    -        0      0   
-del !VLAN: 970  enet  100970     1500  -      -      -        -    -        0      0   

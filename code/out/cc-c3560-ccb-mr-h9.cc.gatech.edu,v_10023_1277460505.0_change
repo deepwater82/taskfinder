@@ -1,6 +1,0 @@
-add !VTP: Configuration Revision          : 667
-del !VTP: Configuration Revision          : 666
-add !VTP: MD5 digest                      : 0x2D 0x8B 0x00 0xD1 0xDA 0x40 0x74 0xB0 
-del !VTP: MD5 digest                      : 0x52 0xD6 0xCD 0x16 0x30 0x99 0x23 0xCD 
-add !VLAN: 893  GIT-topaz-borodovsky             active    
-del !VLAN: 893  GIT-OIT-893                      active    

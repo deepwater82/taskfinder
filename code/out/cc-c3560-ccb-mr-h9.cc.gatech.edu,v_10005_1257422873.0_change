@@ -1,8 +1,0 @@
-add !VTP: Configuration Revision          : 651
-del !VTP: Configuration Revision          : 649
-add !VTP: Number of existing VLANs        : 143
-del !VTP: Number of existing VLANs        : 142
-add !VTP: MD5 digest                      : 0x23 0x27 0xC0 0x3C 0x68 0xFE 0x94 0x2D 
-del !VTP: MD5 digest                      : 0x7C 0xBE 0xF6 0x25 0x9F 0x2A 0x16 0x5F 
-add !VLAN: 669  GT-CC-webdmzdb                   active    
-add !VLAN: 669  enet  100669     1500  -      -      -        -    -        0      0   

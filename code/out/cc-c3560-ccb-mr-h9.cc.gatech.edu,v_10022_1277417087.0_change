@@ -1,8 +1,0 @@
-add !VTP: Configuration Revision          : 666
-del !VTP: Configuration Revision          : 665
-add !VTP: Number of existing VLANs        : 144
-del !VTP: Number of existing VLANs        : 143
-add !VTP: MD5 digest                      : 0x52 0xD6 0xCD 0x16 0x30 0x99 0x23 0xCD 
-del !VTP: MD5 digest                      : 0x3F 0x31 0x45 0xD2 0x2C 0x85 0x60 0x18 
-add !VLAN: 893  GIT-OIT-893                      active    
-add !VLAN: 893  enet  100893     1500  -      -      -        -    -        0      0   

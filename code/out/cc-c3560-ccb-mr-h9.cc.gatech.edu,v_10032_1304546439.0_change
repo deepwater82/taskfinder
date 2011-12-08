@@ -1,6 +1,0 @@
-add !VTP: Configuration Revision          : 684
-del !VTP: Configuration Revision          : 683
-add !VTP: MD5 digest                      : 0x42 0xFC 0xA6 0xF6 0x5E 0x14 0x47 0xA4 
-del !VTP: MD5 digest                      : 0x69 0x45 0xAD 0xCA 0x8C 0x79 0xBE 0x80 
-add !VLAN: 98   GT-CC-tube                       active    
-del !VLAN: 98   GT-CC-stm                        active    
